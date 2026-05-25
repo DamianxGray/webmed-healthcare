@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda Médica</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+    Agenda Médica
+</header>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h3>Menú Principal</h3>
+
+        <a class="menu-item" href="index.html">
+            🏠 Inicio
+        </a>
+
+        <a class="menu-item" href="agenda.html">
+            📅 Mi Agenda
+        </a>
+
+        <a class="menu-item" href="medicamentos.html">
+            💊 Medicamentos
+        </a>
+
+        <a class="menu-item" href="#">
+            💳 Pagos
+        </a>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="main">
+
+        <div class="card">
+
+            <h2>Agendar Consulta Médica</h2>
+
+            <p>
+                Selecciona la especialidad, el doctor y el horario disponible.
+            </p>
+
+            <br>
+
+            <!-- ESPECIALIDAD -->
+
+            <label>
+                Especialidad Médica
+            </label>
+
+            <select class="input">
+
+                <option>
+                    Medicina General
+                </option>
+
+                <option>
+                    Cardiología
+                </option>
+
+                <option>
+                    Pediatría
+                </option>
+
+                <option>
+                    Dermatología
+                </option>
+
+            </select>
+
+            <!-- DOCTOR -->
+
+            <label>
+                Doctor Disponible
+            </label>
+
+            <select class="input">
+
+                <option>
+                    Dr. Carlos Gómez
+                </option>
+
+                <option>
+                    Dra. Laura Martínez
+                </option>
+
+                <option>
+                    Dr. Andrés Pérez
+                </option>
+
+            </select>
+
+            <!-- FECHA -->
+
+            <h3>
+                Selecciona una fecha
+            </h3>
+
+            <h4 id="monthTitle"></h4>
+
+            <div class="calendar" id="calendar"></div>
+
+            <h3 style="margin-top:30px;">
+                Horarios disponibles
+            </h3>
+
+            <div class="hours">
+
+                <div class="hour">8:00 AM</div>
+                <div class="hour">9:00 AM</div>
+                <div class="hour">10:00 AM</div>
+                <div class="hour">11:00 AM</div>
+                <div class="hour">2:00 PM</div>
+                <div class="hour">3:00 PM</div>
+                <div class="hour">4:00 PM</div>
+
+            </div>
+
+            <br><br>
+
+            <button class="button">
+                Confirmar Cita
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    Luis Daniel Silva Cadena © 2026
+</div>
+
+</body>
+<script src="js/agenda.js"></script>
+
+</html>
