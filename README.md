@@ -1,2 +1,21 @@
-# webmed-healthcare
-Webmed Healthcare System es un prototipo web desarrollado por Luis Daniel Silva Cadena para la asignatura Diseño de Software. La plataforma permite gestionar consultas médicas, agenda de citas y catálogo de medicamentos mediante una interfaz responsive desarrollada con HTML, CSS y JavaScript.
+# Webmed Healthcare System
+
+Prototipo web desarrollado para la asignatura Diseño de Software.
+
+## Funcionalidades
+
+- Agendamiento de citas médicas
+- Catálogo de medicamentos
+- Navegación entre módulos
+- Interfaz responsive
+- Diseño basado en UX/UI
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Autor
+
+Luis Daniel Silva Cadena
