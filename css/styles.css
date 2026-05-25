@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#eef4fb;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(90deg,#2c6fb7,#4d8fd6);
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* LAYOUT */
+
+.container{
+    display:flex;
+    min-height:calc(100vh - 120px);
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:240px;
+    background:white;
+    padding:25px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar h3{
+    margin-bottom:20px;
+    color:#2c6fb7;
+}
+
+.menu-item{
+    display:block;
+    text-decoration:none;
+    background:#f4f7fb;
+    padding:14px;
+    margin-bottom:12px;
+    border-radius:10px;
+    color:#333;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.menu-item:hover{
+    background:#2c6fb7;
+    color:white;
+    transform:translateX(5px);
+}
+
+/* MAIN */
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    margin-bottom:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#2c6fb7;
+}
+
+/* CAMPOS */
+
+.campo{
+    margin-bottom:10px;
+}
+
+.campo strong{
+    color:#2c6fb7;
+}
+
+/* BOTONES */
+
+.button{
+    background:#2c6fb7;
+    color:white;
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:15px;
+    font-weight:600;
+}
+
+.button:hover{
+    background:#1d5a99;
+    transform:scale(1.03);
+}
+
+/* INPUTS */
+
+.input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    padding:18px;
+    background:white;
+    color:#666;
+    box-shadow:0 -2px 8px rgba(0,0,0,0.05);
+}
+
+/* PRODUCTOS */
+
+.store{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.product{
+    width:250px;
+    background:white;
+    border-radius:16px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+}
+
+.product-image{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+/* CALENDARIO */
+
+.calendar{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:10px;
+    margin-top:20px;
+}
+
+.day{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+.header-day{
+    background:#2c6fb7;
+    color:white;
+    font-weight:bold;
+}
+
+.selected{
+    background:#2c6fb7;
+    color:white;
+}
+
+/* HORARIOS */
+
+.hours{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.hour{
+    background:white;
+    padding:12px 18px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .store{
+        justify-content:center;
+    }
+
+    .calendar{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* CALENDARIO DINÁMICO */
+
+#monthTitle{
+    margin-top:15px;
+    color:#2c6fb7;
+}
+
+.day{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.day:hover{
+    background:#dcecff;
+}
+
+.hour{
+    transition:0.3s;
+}
+
+.hour:hover{
+    background:#dcecff;
+}
+
+.selected{
+    background:#2c6fb7 !important;
+    color:white !important;
+}
